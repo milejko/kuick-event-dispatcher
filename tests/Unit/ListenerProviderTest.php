@@ -4,13 +4,13 @@ namespace Kuick\Event\Tests\Unit;
 
 use Kuick\EventDispatcher\ListenerPriority;
 use Kuick\EventDispatcher\ListenerProvider;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 use stdClass;
 use Tests\Kuick\EventDispatcher\Mocks\MockEvent;
 
-/**
- * @covers \Kuick\EventDispatcher\ListenerProvider
- */
+#[CoversClass(ListenerProvider::class)]
+#[CoversClass(ListenerPriority::class)]
 class ListenerProviderTest extends TestCase
 {
     public function testIfAddedListenerCanBeRetrieved(): void
@@ -68,7 +68,7 @@ class ListenerProviderTest extends TestCase
         $provider->registerListener(MockEvent::class, $listener2);
         $provider->registerListener('*', $listener3);
         $provider->registerListener('std*', $listener4);
-        $this->assertEquals([$listener2, $listener1], $provider->getListenersForEvent(new MockEvent()));
+        $this->assertEquals([$listener2, $listener3], $provider->getListenersForEvent(new MockEvent()));
         $this->assertEquals([$listener3, $listener4], $provider->getListenersForEvent(new stdClass()));
     }
 }

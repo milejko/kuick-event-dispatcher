@@ -4,14 +4,13 @@ namespace Kuick\Event\Tests\Unit;
 
 use Kuick\EventDispatcher\EventDispatcher;
 use Kuick\EventDispatcher\ListenerProvider;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 use stdClass;
 use Tests\Kuick\EventDispatcher\Mocks\MockEvent;
 use Tests\Kuick\EventDispatcher\Mocks\StoppableEvent;
 
-/**
- * @covers \Kuick\EventDispatcher\EventDispatcher
- */
+#[CoversClass(EventDispatcher::class)]
 class EventDispatcherTest extends TestCase
 {
     public function testIfAddedListenerCanBeRetrieved(): void
