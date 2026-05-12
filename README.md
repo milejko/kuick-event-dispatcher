@@ -1,6 +1,6 @@
 # Kuick Event Dispatcher
 [![Latest Version](https://img.shields.io/github/release/milejko/kuick-event-dispatcher.svg?cacheSeconds=3600)](https://github.com/milejko/kuick-event-dispatcher/releases)
-[![PHP](https://img.shields.io/badge/PHP-8.2%20|%208.3%20|%208.4-blue?logo=php&cacheSeconds=3600)](https://www.php.net)
+[![PHP](https://img.shields.io/badge/PHP-8.2%20|%208.3%20|%208.4%20|%208.5-blue?logo=php&cacheSeconds=3600)](https://www.php.net)
 [![Total Downloads](https://img.shields.io/packagist/dt/kuick/event-dispatcher.svg?cacheSeconds=3600)](https://packagist.org/packages/kuick/event-dispatcher)
 [![GitHub Actions CI](https://github.com/milejko/kuick-event-dispatcher/actions/workflows/ci.yml/badge.svg)](https://github.com/milejko/kuick-event-dispatcher/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/milejko/kuick-event-dispatcher/graph/badge.svg?token=M3FW3XYJ5J)](https://codecov.io/gh/milejko/kuick-event-dispatcher)
